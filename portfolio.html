@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <script src="progressbar.js"></script>
+    <link rel="stylesheet" href="portfolio.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+
+<nav>
+<ul>
+    <li><a href="home.html">HOME</a></li>
+    <li><a href="professional.html">KNOWLEDGE</a></li>
+    <li><a href="experience.hmtl">MY LATEST WORK</a></li>
+    <li><a href="portfolio.html">EXPERIENCE</a></li>
+    <li><a href="contact.html">CONTACT</a></li>
+</ul>
+
+</nav>
+<div class="parallax">
+    <p><span style="color: whitesmoke; font-size: 25px;">HELLO, I AM MOHAMMED AOURAGH.</span></p>
+    <p><span style="font-size: 25px; color: whitesmoke"> APPLICATION AND MEDIA DEVELOPER</span></p>
+    <div class="about">
+    <p>Mijn naam is Mohammed Aouragh. Ik ben momenteel 17 jaar oud en woon momenteel in Rotterdam
+        Verder liggen mijn interesses in het gebied van ICT, elektronica, hard-en software, games, sports en/of e-sports.
+
+        Momenteel ben ik bezig met mijn opleiding Applicatie-en mediaontwikkelaar.
+        Hiervoor heb ik 4 jaar lang vmbo-tl (mavo) gedaan en merkte al snel lag dat mijn interesses lagen in de ICT.
+
+        Wat mij onderscheidt van anderen is het inzien en oplossen van problemen, die door andere niet zo snel worden opgemerkt.
+        Verder ben ik enthousiast en gedreven om mijn kennis binnen de ICT uit-te-breiden. </p>
+    </div>
+</div>
+<div class="kade">
+<p><span style="color: #BEC7D5; font-weight: bold">01</span><span style="color: white"> KNOWLEDGE </span></p>
+</div>
+    <div class="parallax1">
+
+
+        <div class="progress">
+            <div class="test2">
+                <div class="combine">
+            <p class="html">HTML:</p>
+                    <div id="myProgress">
+                        <div id="myBar">60%</div>
+                    </div>
+                </div>
+            <div class="combine">
+        <p class="css">CSS:</p>
+                <div id="myProgress1">
+                    <div id="myBar1">10%</div>
+                </div>
+                </div>
+            <div class="combine">
+        <p class="csharp">C#:</p>
+                <div id="myProgress2">
+                    <div id="myBar2">10%</div>
+                </div>
+                </div>
+            <div class="combine">
+        <p class="javascript">JavaScript:</p>
+                <div id="myProgress3">
+                    <div id="myBar3">10%</div>
+                </div>
+                </div>
+            <div class="combine">
+        <p class="PhP">PhP:</p>
+                <div id="myProgress4">
+                    <div id="myBar4">10%</div>
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
+
+        <div class="kade1">
+            <p><span style="color: #BEC7D5; font-weight: bold">02</span><span style="color: white"> MY LATEST WORK </span></p>
+        </div>
+        <div class="sourcecode">
+        <p style="color: white">Klik voor source-code :)</p>
+    </div>
+           <a href="https://github.com/Aouragh/kruisingopdracht"><img class="kruis" src="kruisopdracht.png" width="400" height="345"></a>
+            <a href="https://github.com/Aouragh/garage"><img class="kruis1" src="garage.png" width="400" height="345"></a>
+            <a href="https://github.com/Aouragh/PhPLabs"><img class="kruis2" src="phplabs.png" width="400" height="345"></a>
+
+<div class="kade2">
+    <p><span style="color: #BEC7D5; font-weight: bold">03</span><span style="color: white"> EXPERIENCE </span></p>
+</div>
+<div class="parallax2">
+    <div class="timeline">
+        <div class="container left">
+            <div class="content">
+                <h2>PhP</h2>
+                <p>Basis gebruik van XAMPP en phpmyadmin.
+                    Het maken van een PDO connection.
+                    Het kunnen en toepassen van CRUD (Create, Read, Update en Delete) via code.
+                    Het toepassen van CRUD op verschillende manieren, zoals een keuzemenu.
+                </p>
+            </div>
+        </div>
+        <div class="container right">
+            <div class="content">
+                <h2>C#</h2>
+                <p>Operatoren, if else statements, button-onclick, button-hover, picturebox.
+
+
+                    </p>
+            </div>
+        </div>
+        <div class="container left">
+            <div class="content">
+                <h2>Javascript</h2>
+                <p>Operatoren, variabels, het maken van functions. Het oproepen van functions. If en else statements.s</p>
+            </div>
+        </div>
+        <div class="container right">
+            <div class="content">
+                <h2>HTML & CSS</h2>
+                <p>Positioning (flex, block, inline-block, absolute, relative etc. ).
+                    Structuur van een html pagina (nav, body, container, divs, id's, link-rel etc.).
+                    Het maken van formulieren, labels etc.
+                    Het verwerken van Javascript en/of JQuery in html/css
+                    en veel meer</p>
+            </div>
+        </div>
+
+    </div>
+    <div class="kade3">
+        <p><span style="color: #BEC7D5; font-weight: bold">04</span><span style="color: white"> CONTACT </span></p>
+    </div>
+    <div class="contact">
+        <p>EMAIL: mohammedaouragh1@outlook.com</p>
+        <p>Made by Mohammed Aouragh</p>
+        <p>https://github.com/Aouragh</p>
+    </div>
+</div>
+
+
+<script>
+    function move() {
+        var elem = document.getElementById("myBar");
+        var width = 10;
+        var id = setInterval(frame, 10);
+        function frame() {
+            if (width >= 80) {
+                clearInterval(id);
+            } else {
+                width++;
+                elem.style.width = width + '%';
+                elem.innerHTML = width * 1  + '%';
+            }
+        }
+    }
+
+    function move1() {
+        var elem = document.getElementById("myBar1");
+        var width = 10;
+        var id = setInterval(frame, 10);
+        function frame() {
+            if (width >= 60) {
+                clearInterval(id);
+            } else {
+                width++;
+                elem.style.width = width + '%';
+                elem.innerHTML = width * 1  + '%';
+            }
+        }
+    }
+
+
+    function move2() {
+        var elem = document.getElementById("myBar2");
+        var width = 10;
+        var id = setInterval(frame, 10);
+        function frame() {
+            if (width >= 15 ) {
+                clearInterval(id);
+            } else {
+                width++;
+                elem.style.width = width + '%';
+                elem.innerHTML = width * 1  + '%';
+            }
+        }
+    }
+
+
+    function move3() {
+        var elem = document.getElementById("myBar3");
+        var width = 10;
+        var id = setInterval(frame, 10);
+        function frame() {
+            if (width >= 25) {
+                clearInterval(id);
+            } else {
+                width++;
+                elem.style.width = width + '%';
+                elem.innerHTML = width * 1  + '%';
+            }
+        }
+    }
+
+
+    function move4() {
+        var elem = document.getElementById("myBar4");
+        var width = 10;
+        var id = setInterval(frame, 10);
+        function frame() {
+            if (width >= 50) {
+                clearInterval(id);
+            } else {
+                width++;
+                elem.style.width = width + '%';
+                elem.innerHTML = width * 1  + '%';
+            }
+        }
+    }
+    move();
+    move1();
+    move2();
+    move3();
+    move4();
+</script>
+</body>
+</html>
+

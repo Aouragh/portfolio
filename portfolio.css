@@ -1,0 +1,479 @@
+
+
+
+body {
+    margin: 0;
+    font-family: Microsoft Yi Baiti;
+}
+
+
+nav > ul > li > a {
+        text-decoration: none;
+    }
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    li {
+        margin-right: 5%;
+
+    }
+
+    nav {
+        background-color:  #2a79a7;
+        height: 7vh;
+
+    }
+
+    li > a {
+        text-align: center;
+        color: white;
+        font-size: 15px;
+        font-family: Microsoft Yi Baiti;
+    }
+    a:hover {
+       color: #A2A8B0;
+    }
+.parallax > p {
+    margin: 0;
+    color: white;
+    font-size: 50px;
+    margin-left: 36%;
+
+
+}
+.parallax {
+
+        background-color: rgb(26, 126, 184);
+        height: 120%;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        padding-top: 10%;
+
+    }
+
+            div.parallax1 {
+                background-image: url("computer-desk-hand-374631.jpg");
+                height: 180%;
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            div.parallax2 {
+                background-image: url("black-coffee-cellphone-coffee-860379.jpg");
+                height: 127%;
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+    body, html {
+        height: 100%;
+    }
+
+        .about {
+
+            font-size: 20px;
+            position: relative;
+            left: 29%;
+            top: 15%;
+            width: 40%;
+            padding: 40px;
+            background-color: #333B50;
+    }
+        .about > p {
+            color: white;
+            font-family: Microsoft Yi Baiti;
+
+        }
+
+        .progress {
+            position: absolute;
+            width: 50%;
+            top: 140%;
+            left: 30%;
+        }
+        .progress h1 {
+            margin: 0;
+        }
+
+
+
+#myProgress, #myProgress1, #myProgress2, #myProgress3,#myProgress4 {
+    width: 100%;
+    padding-left: 10px;
+}
+
+
+#myBar, #myBar1, #myBar2, #myBar3, #myBar4 {
+    width: 100%;
+    height: 15px;
+    background-color: #00D646;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    font-size: 15px;
+    font-family: "Microsoft Yi Baiti";
+}
+
+.combine{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.html {
+    color: #ffffff;
+    font-size: 20px;
+
+
+}
+.css {
+    color: #ffffff;
+    font-size: 20px;
+
+}
+
+.csharp {
+    color: #ffffff;
+    font-size: 20px;
+
+
+}
+
+
+
+.javascript {
+    color: #ffffff;
+    font-size: 20px;
+
+}
+.PhP {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.titel {
+
+    font-family: "Microsoft Yi Baiti";
+    width: 100%;
+    color: whitesmoke;
+    font-size: 25px;
+}
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Microsoft Yi Baiti";
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #333B50;
+    top: 1%;
+    bottom: 0;
+    left: 49%;
+    margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -4px;
+    background-color: white;
+    border: 4px solid #333B50;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+    left: 0;
+}
+
+/* Place the container to the right */
+.right {
+    left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #2a79a7;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #2a79a7 transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+    left: -28px;
+}
+
+/* The actual content */
+.content {
+    padding: 20px 30px;
+    background-color: #2a79a7;
+    position: relative;
+    border-radius: 6px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+    /* Place the timelime to the left */
+    .timeline::after {
+        left: 31px;
+    }
+
+    /* Full-width containers */
+    .container {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    /* Make sure that all arrows are pointing leftwards */
+    .container::before {
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+    }
+
+    /* Make sure all circles are at the same spot */
+    .left::after, .right::after {
+        left: 15px;
+    }
+
+    /* Make all right containers behave like the left ones */
+    .right {
+        left: 0%;
+    }
+}
+
+
+.kade {
+
+    top: 120%;
+    height: 10%;
+    position: absolute;
+    width: 100%;
+    background-color: #333B50;
+}
+
+.kade > p {
+    margin-top: 20px;
+    font-family: "Microsoft Yi Baiti";
+    font-size: 30px;
+    margin-left: 41%;
+}
+
+.kade1 {
+
+    top: 200%;
+    height: 10%;
+    position: absolute;
+    width: 100%;
+    background-color: #333B50;
+}
+
+.kade1 > p {
+    margin-top: 20px;
+    font-family: "Microsoft Yi Baiti";
+    font-size: 30px;
+    margin-left: 40%;
+
+
+}
+
+.kruis {
+    position: absolute;
+    top: 225%;
+    left: 5%;
+    border: 1px solid white;
+
+
+}
+.kruis1 {
+    position: absolute;
+    top: 225%;
+    left: 37.5%;
+    border: 1px solid white;
+
+}
+
+.kruis2 {
+    position: absolute;
+    top: 225%;
+    border: 1px solid white;
+    left: 70%
+}
+
+img:hover {
+    opacity: 0.5;
+}
+
+.sourcecode {
+    position: absolute;
+    top: 212%;
+    left: 46%;
+}
+
+.kade2 {
+    position: absolute;
+    top: 298%;
+    height: 10%;
+    width: 100%;
+    background-color: #333B50;
+}
+
+.kade2 > p {
+    margin-top: 20px;
+    font-family: "Microsoft Yi Baiti";
+    font-size: 30px;
+    margin-left: 42%;
+}
+
+.kade3 {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 404.5%;
+    height: 10%;
+    width: 100%;
+    background-color: #333B50;
+}
+
+.kade3 > p {
+    margin-top: 20px;
+    font-family: "Microsoft Yi Baiti";
+    font-size: 30px;
+    margin-left: 43%;
+}
+
+.contact {
+    width: 100%;
+    height: 20%;
+    position: absolute;
+    top: 414%;
+    background-color: #EDEDEB;
+}
+
+.contact > p {
+    font-weight: bold;
+    font-family: "Microsoft Yi Baiti";
+    font-size: 20px;
+    margin-left: 40%;
+    color: black;
+}
+.content > h2 {
+    color: #BEC7D5;
+    font-family: "Microsoft Yi Baiti";
+}
+
+.content > p {
+    color: white;
+    font-family: "Microsoft Yi Baiti";
+}
+
+@media all and (max-width: 1025px) {
+   nav {
+       height: 10%;
+   }
+    li > a {
+
+        text-align: center;
+        color: white;
+        font-size: 25px;
+        font-family: Microsoft Yi Baiti;
+    }
+    li {
+
+    }
+    .parallax > p {
+        width: 40%;
+
+    }
+    .kruis {
+        width: 20%;
+    }
+    .kruis1 {
+        width: 20%;
+    }
+    .kruis2 {
+        width: 20%;
+    }
+    .progress{
+        width: 70%;
+        height: 40%;
+        left: 20%;
+    }
+
+    .about {
+        width: 50%;
+    }
+}
+@media screen and (max-width: 600px) {
+    /* Place the timelime to the left */
+    .timeline::after {
+        left: 31px;
+    }}
